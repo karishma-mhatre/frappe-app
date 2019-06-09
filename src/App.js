@@ -7,7 +7,7 @@ import reducer from './Reducers'
 import List from './Components/List/List';
 import Favourites from './Components/Favourites/Favourites';
 import Header from './Components/Header/Header';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import './styles/common.scss';
 
 const middleware = [thunk];
