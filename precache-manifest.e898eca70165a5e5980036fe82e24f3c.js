@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72fab5fd7a3165319030459e3921ddc9",
+    "revision": "6c3539c7e1579141fe2a143c7dbe31ab",
     "url": "/frappe-app/index.html"
   },
   {
-    "revision": "4e53f82aca1fbfe77b66",
+    "revision": "f2137eb6d591a74992b7",
     "url": "/frappe-app/static/css/main.a84d14e1.chunk.css"
   },
   {
-    "revision": "3ce6b71c38f69fcdbafa",
-    "url": "/frappe-app/static/js/2.8527b308.chunk.js"
+    "revision": "c5216b377d83bd8db5bb",
+    "url": "/frappe-app/static/js/2.a59d52a3.chunk.js"
   },
   {
-    "revision": "4e53f82aca1fbfe77b66",
-    "url": "/frappe-app/static/js/main.af32336c.chunk.js"
+    "revision": "f2137eb6d591a74992b7",
+    "url": "/frappe-app/static/js/main.01c2bac5.chunk.js"
   },
   {
     "revision": "4ff520f3c1672d1f7a7d",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/frappe-app/precache-manifest.2f0d10b58622e64ee1ec2400f427dd94.js"
+  "/frappe-app/precache-manifest.e898eca70165a5e5980036fe82e24f3c.js"
 );
 
 self.addEventListener('message', (event) => {
