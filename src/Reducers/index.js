@@ -8,7 +8,7 @@ let initialState = {
     isLoading: true
 }
 
-const frappe = (state = initialState, action) => {
+const frappListings = (state = initialState, action) => {
     switch(action.type) {
         case ADD_TO_FAVOURITES:
             if(state.favourites.findIndex(item => item.title === action.listingTitle) >= 0) {
@@ -40,7 +40,7 @@ const frappe = (state = initialState, action) => {
 } 
 
 const rootReducer = combineReducers({
-    frappe
+    frappListings
 })
 
 export default rootReducer;

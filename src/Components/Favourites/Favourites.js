@@ -5,26 +5,23 @@ import Listing from '../Listing/Listing'
 class Favourites extends Component {
 
     render() {
-        var content = <></>;
-        if(this.props.isLoading){
-            content = <div>Loading</div>
-        }else{
-            content = <div>
-                {
-                    this.props.favourites.map((element) => (
-                        <Listing listing={element}></Listing>
-                    ))
-                }
-
-                <div>favourites</div>
-            </div>
-            
-        }
         return (
             <>
-            {
-                content
-            }
+                {
+                    this.props.favourites.length > 0 &&
+                    <div className="container list-container">
+                        {
+                            this.props.favourites.map((element, index) => (
+                                <Listing listing={element} key={index}></Listing>
+                            ))
+                        }
+                    </div>
+
+                }
+                {
+                    this.props.favourites.length === 0 &&
+                    <div className="no-favourites">No Favourites yet.</div>
+                }
             </>
         )
     }
@@ -32,7 +29,7 @@ class Favourites extends Component {
 
 const mapStateToProps = state => (
     {
-        favourites: state.frappe.favourites,
+        favourites: state.frappListings.favourites,
     }
 )
 

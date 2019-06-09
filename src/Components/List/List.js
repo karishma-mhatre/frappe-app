@@ -10,25 +10,24 @@ class List  extends Component {
     }
 
     render() {
-
-        var content = <></>;
-        if(this.props.isLoading){
-            content = <div>Loading</div>
-        }else{
-            content = <div>
-                {
-                    this.props.list.map((element) => (
-                        <Listing listing={element} tab="list"></Listing>
-                    ))
-                }
-            </div>
-            
-        }
         return (
             <>
-            {
-                content
-            }
+                {
+                    this.props.isLoading &&
+                    <div>Loading</div>
+
+                }
+                {
+                    !this.props.isLoading &&
+                    <div className="container list-container">
+                        {
+                            this.props.list.map((element, index) => (
+                                <Listing listing={element} tab="list" key={index}></Listing>
+                            ))
+                        }
+                    </div>
+
+                }
             </>
         )
     }
@@ -36,8 +35,8 @@ class List  extends Component {
 
 const mapStateToProps = state => (
     {
-        list: state.frappe.list,
-        isLoading: state.frappe.isLoading
+        list: state.frappListings.list,
+        isLoading: state.frappListings.isLoading
     }
 )
 

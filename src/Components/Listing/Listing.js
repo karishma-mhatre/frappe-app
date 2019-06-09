@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addToFavourites } from '../../Actions';
+import "./list.scss";
 
 const Listing = ({dispatch, listing, tab}) => {
 
@@ -10,10 +11,10 @@ const Listing = ({dispatch, listing, tab}) => {
     }
 
     return (
-        <div>
-            <div>{listing.title}</div>
+        <div className="listing">
+            <div >{listing.title}</div>
             <div>
-                <img src={listing.imageUrl}></img>
+                <img src={listing.imageUrl} alt={listing.title}></img>
             </div>
             <div>
                 {listing.type}

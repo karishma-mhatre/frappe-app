@@ -26,7 +26,7 @@ const fetchList = () => dispatch => {
   }
 
 export const fetchListIfNeeded = () => (dispatch, getState) => {
-    if (getState().frappe.isLoading) {
+    if (getState().frappListings.isLoading) {
       return dispatch(fetchList())
     }
   }
