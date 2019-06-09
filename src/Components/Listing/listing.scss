@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+
+.listing {
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 0px 18px 0px $color-grey;
+
+    p {
+        margin: 10px 0 0 0;
+    }
+}
+.listing-title {
+    p {
+        text-overflow: ellipsis;
+    }
+}
+
+.listing-desc {
+    font-size: $font-size-smaller;
+    color: $color-dark-grey;
+}
+
+.listing-view_count {
+    font-size: $font-size-smaller;
+    color: $color-red;
+}
+
+.listing-img {
+    padding: 10px;
+    
+    img {
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.listing-add {
+    .btn {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .listing {
+        width: 100%;
+    }
+}
