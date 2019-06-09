@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Listing from '../Listing/Listing'
+import Listing from '../Listing/Listing';
+import './favourites.scss';
 
 class Favourites extends Component {
 

@@ -10,7 +10,6 @@ export const addToFavourites = (listingTitle) => ({
 export const receiveList = (json) => ({
     type: RECEIVE_LIST,
     list: json,
-    receivedAt: Date.now()
   })
 
 export const requestList = () => ({

@@ -14,7 +14,7 @@ class List  extends Component {
             <>
                 {
                     this.props.isLoading &&
-                    <div>Loading</div>
+                    <div className="loading">Loading...</div>
 
                 }
                 {
